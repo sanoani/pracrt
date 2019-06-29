@@ -13,5 +13,6 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.540366" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="TootNet" Version="2.0.0" />
   </ItemGroup>
 </Project>

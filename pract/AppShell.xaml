@@ -1,8 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Shell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:local="clr-namespace:pract.Views" Title="pract" x:Class="pract.AppShell">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d"
+       xmlns:local="clr-namespace:pract; assembly=pract"
+       Title="pract"
+       x:Class="pract.AppShell"
+       FlyoutBehavior="Flyout"
+       FlyoutHeaderBehavior="CollapseOnScroll"
+       FlyoutIcon="https://ika.queloud.net/ikatodon-media/accounts/avatars/000/028/070/static/bfa09a11711f3bd4445e1efd819f621b.png">
     <!-- 
         Styles and Resources 
     -->
+    <!--
     <Shell.Resources>
         <ResourceDictionary>
             <Color x:Key="NavigationPrimary">#2196F3</Color>
@@ -20,42 +31,82 @@
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
+    -->
     <!-- Your Pages -->
-    <TabBar>
-        <Tab Title="Browse" Icon="tab_feed.png">
-            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
-        </Tab>
-        <Tab Title="About" Icon="tab_about.png">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
-        </Tab>
-    </TabBar>
-    <!-- Optional Templates 
-    // These may be provided inline as below or as separate classes.
-
-    // This header appears at the top of the Flyout.
     <Shell.FlyoutHeaderTemplate>
-	<DataTemplate>
-            <Grid>ContentHere</Grid>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+              HeightRequest="200">
+                <Image Aspect="AspectFill"
+                       Source="https://ika.queloud.net/ikatodon-media/accounts/headers/000/028/070/original/5961e61fa01ac8b9c1eceacf136b49ff.png"
+                       Opacity="1" />
+                
+                <Image Aspect="AspectFit"
+                       Source="https://ika.queloud.net/ikatodon-media/accounts/avatars/000/028/070/original/bfa09a11711f3bd4445e1efd819f621b.gif"
+                       Opacity="1" 
+                    HorizontalOptions="Start"
+                       WidthRequest="50"/>
+                
+                <Label Text="さのあに"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center" />
+                
+                <Label Text="@sanoani@ika.queloud.net"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       VerticalOptions="End" />
+            </Grid>
+            
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
-
-    // ItemTemplate is for ShellItems as displayed in a Flyout
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Title, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.ItemTemplate>
-
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Text, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>
-
+    
+    <FlyoutItem Title="Profile" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
+        </FlyoutItem>
+        
+        <FlyoutItem Title="List" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
+        </FlyoutItem>
+    
+        <FlyoutItem Title="Settings" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
+        </FlyoutItem>
+       
+        <FlyoutItem Title="About" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
+        </FlyoutItem>
+    
+   
+    <!--
+    <TabBar>
+        <Tab Title="Home" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
+        </Tab>
+        
+        <Tab Title="Local" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
+        </Tab>
+        <Tab Title="Notification" Icon="tab_feed.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
+        </Tab>
+       
+        <Tab Title="About" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
+        </Tab>
+    </TabBar>
     -->
+    
+    <!--
+    <ShellItem Title="Notifications" Icon="tab_feed.png">
+        <ShellSection>
+            <ShellContent>
+                <local:NotificationsPage />
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+    -->
+    
 </Shell>
