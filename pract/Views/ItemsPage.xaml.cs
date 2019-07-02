@@ -1,15 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
 using pract.Models;
-using pract.Views;
 using pract.ViewModels;
+using Xamarin.Forms;
 
 namespace pract.Views
 {
@@ -25,6 +18,7 @@ namespace pract.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
+
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -50,6 +44,11 @@ namespace pract.Views
 
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
+        }
+
+        void Button_Clicked(object sender, System.EventArgs e)
+        {
+            this.DisplayAlert("fab Clicked", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "finish");
         }
     }
 }

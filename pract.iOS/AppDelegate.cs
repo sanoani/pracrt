@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using SuaveControls.FloatingActionButton.iOS.Renderers;
+
 namespace pract.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -25,6 +27,9 @@ namespace pract.iOS
             Xamarin.Calabash.Start();
             global::Xamarin.Forms.Forms.SetFlags("Shell_Experimental", "Visual_Experimental", "CollectionView_Experimental", "FastRenderers_Experimental");
             global::Xamarin.Forms.Forms.Init();
+
+            FloatingActionButtonRenderer.InitRenderer();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

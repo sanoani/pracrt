@@ -10,6 +10,6 @@ namespace pract
         public AppShell()
         {
             InitializeComponent();
-        }
+         }
     }
 }
