@@ -6,6 +6,103 @@
              mc:Ignorable="d"
              x:Class="pract.App">
     <Application.Resources>
+        
+        <!-- アイコンフォント設定ここから -->
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            <On Platform="iOS" Value="Material Design Icons" />
+        </OnPlatform>
+        
+        <x:String x:Key="plus">&#xF415;</x:String>
+        <x:String x:Key="check">&#xF12C;</x:String>
+        <x:String x:Key="checkbox-blank-outline">&#xF131;</x:String>
+        <x:String x:Key="checkbox-marked-outline">&#xF135;</x:String>
+        <x:String x:Key="close">&#xF156;</x:String>
+        <x:String x:Key="calendar-month">&#xFDFA;</x:String>
+        <x:String x:Key="swap-vertical">&#xF4E2;</x:String>
+        
+        <x:String x:Key="home-outline">&#xF6A0;</x:String>
+        <x:String x:Key="home">&#xF2DC;</x:String>
+        
+        <x:String x:Key="account-group">&#xF848;</x:String>
+        <x:String x:Key="account-group-outline">&#xFB34;</x:String>
+        
+        <x:String x:Key="bell">&#xF09A;</x:String>
+        <x:String x:Key="bell-outline">&#xF09C;</x:String>
+        
+        <x:String x:Key="email">&#xF1EE;</x:String>
+        <x:String x:Key="email-outline">&#xF1F0;</x:String>
+        
+        <x:String x:Key="feather">&#xF6D2;</x:String>
+        
+        <x:String x:Key="plus-outline">&#xF704;</x:String>
+        
+        <x:String x:Key="reply">&#xF45A;</x:String>
+        
+        <x:String x:Key="twitter-retweet">&#xF547;</x:String>
+        
+        <x:String x:Key="heart">&#xF2D1;</x:String>
+        <x:String x:Key="heart-outline">&#xF2D5;</x:String>
+        
+        <x:String x:Key="dots-horizontal">&#xF1D8;</x:String>
+        <x:String x:Key="dots-horizontal-circle">&#xF7C2;</x:String>
+        <x:String x:Key="dots-horizontal-circle-outline">&#xFB69;</x:String>
+        
+        <x:String x:Key="account">&#xF004;</x:String>
+        <x:String x:Key="account-outline">&#xF013;</x:String>
+        
+        <x:String x:Key="view-headline">&#xF571;</x:String>
+        <x:String x:Key="view-sequential">&#xF728;</x:String>
+        
+        <x:String x:Key="settings">&#xF2FC;</x:String>
+        <x:String x:Key="settings-outline">&#xF8BA;</x:String>
+        
+        <x:String x:Key="information">&#xFB35;</x:String>
+        <x:String x:Key="information-outline">&#xF2FD;</x:String>
+        
+        <x:String x:Key="account-question">&#xFB35;</x:String>
+        <x:String x:Key="account-question-outline">&#xFB36;</x:String>
+        
+        <x:String x:Key="lightbulb">&#xF335;</x:String>
+        <x:String x:Key="lightbulb-outline">&#xF336;</x:String>
+        
+        <x:String x:Key="lightbulb-on">&#xF6E7;</x:String>
+        <x:String x:Key="lightbulb-on-outline">&#xF6E8;</x:String>
+        
+        <x:String x:Key="text">&#xF9A7;</x:String>
+        
+        <x:String x:Key="pin">&#xF403;</x:String>  
+        <x:String x:Key="pin-outline">&#xF930;</x:String>
+        
+        <x:String x:Key="pencil-plus">&#xFDC7;</x:String>
+        <x:String x:Key="pencil-plus-outline">&#xFDC8;</x:String>
+        
+        <x:String x:Key="image">&#xF2E9;</x:String>
+        <x:String x:Key="image-outline">&#xF975;</x:String>
+        
+        <x:String x:Key="ballot">&#xF9C8;</x:String>
+        <x:String x:Key="ballot-outline">&#xF9C9;</x:String>
+        
+        <x:String x:Key="earth">&#xF1E7;</x:String>
+        <x:String x:Key="lock-open">&#xF33F;</x:String>
+        <x:String x:Key="lock-open-outline">&#xF340;</x:String>
+        <x:String x:Key="lock">&#xF33E;</x:String>
+        <x:String x:Key="lock-outline">&#xF341;</x:String>
+        
+        
+        <x:String x:Key="emoticon-happy">&#xFC4D;</x:String>
+        <x:String x:Key="emoticon-happy-outline">&#xF1F5;</x:String>
+        
+        <x:String x:Key="pound">&#xF423;</x:String>
+        <x:String x:Key="pound-box">&#xF424;</x:String>
+        
+        <x:String x:Key="message-alert">&#xF362;</x:String>
+        <x:String x:Key="message-alert-outline">&#xFA03;</x:String>
+        
+
+        
+        <!-- アイコンフォント設定ここまで -->
+        
     </Application.Resources>
     
 </Application>
