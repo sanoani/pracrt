@@ -99,9 +99,9 @@
         <x:String x:Key="message-alert">&#xF362;</x:String>
         <x:String x:Key="message-alert-outline">&#xFA03;</x:String>
         
-
-        
         <!-- アイコンフォント設定ここまで -->
+        
+        
         
     </Application.Resources>
     

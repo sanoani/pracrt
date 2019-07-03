@@ -16,7 +16,6 @@
     <PackageReference Include="TootNet" Version="2.0.0" />
     <PackageReference Include="Xam.Plugin.Iconize" Version="3.5.0.129" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
-    <PackageReference Include="SuaveControls.FloatingActionButton" Version="2018.1.5" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Contents\" />

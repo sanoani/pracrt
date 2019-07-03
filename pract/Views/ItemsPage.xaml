@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
              mc:Ignorable="d"
              x:Class="pract.Views.ItemsPage"
              Title="{Binding Title}"
@@ -33,6 +32,18 @@
                     <x:String>Forth Item</x:String>
                     <x:String>Fifth Item</x:String>
                     <x:String>Sixth Item</x:String>
+                    <x:String>First Item</x:String>
+                    <x:String>Second Item</x:String>
+                    <x:String>Third Item</x:String>
+                    <x:String>Forth Item</x:String>
+                    <x:String>Fifth Item</x:String>
+                    <x:String>Sixth Item</x:String>
+                    <x:String>First Item</x:String>
+                    <x:String>Second Item</x:String>
+                    <x:String>Third Item</x:String>
+                    <x:String>Forth Item</x:String>
+                    <x:String>Fifth Item</x:String>
+                    <x:String>Sixth Item</x:String>
                 </x:Array>
             </d:ListView.ItemsSource>
             
@@ -53,15 +64,25 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-            
-        <controls:FloatingActionButton x:Name="FAB" 
-                                       HorizontalOptions="End"
-                                       VerticalOptions="End"
-                                       WidthRequest="80"
-                                       HeightRequest="80"
-                                       Image=""
-                                       ButtonColor="Teal" 
-                                       Clicked="Button_Clicked" />
+
+        <ImageButton Grid.Column="1" Grid.Row="1"
+                     x:Name="btn"
+                     BackgroundColor="#2B78FE" 
+                     Padding="20" 
+                     CornerRadius="50" 
+                     WidthRequest="70" 
+                     HeightRequest="70"  
+                     VerticalOptions="End" 
+                     HorizontalOptions="End"
+                     Clicked="Button_Clicked"
+                     Command="{Binding Button_Clicked}">
+            <ImageButton.Source>
+                <FontImageSource
+                    FontFamily="{DynamicResource MaterialFontFamily}"
+                    Glyph="{StaticResource plus}" />
+            </ImageButton.Source>                
+        </ImageButton>
+        
         
     </StackLayout>
     

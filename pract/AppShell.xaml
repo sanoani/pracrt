@@ -91,16 +91,17 @@
     </Shell.FlyoutHeaderTemplate>
     
     <FlyoutItem Title="Profile" Icon="tab_feed.png">
-        <Tab Title="Profile" Icon="tab_feed.png">
+        <Tab Title="Home" Icon="tab_feed.png">
+            
             <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
         </Tab>
-        <Tab Title="Profile" Icon="tab_feed.png">
+        <Tab Title="Local" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
         </Tab>
-        <Tab Title="Profile" Icon="tab_feed.png">
+        <Tab Title="Notification" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}" />
         </Tab>
-        <Tab Title="Profile" Icon="tab_feed.png">
+        <Tab Title="DM" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}" />
         </Tab>
     </FlyoutItem>

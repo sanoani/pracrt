@@ -48,7 +48,7 @@ namespace pract.Views
 
         void Button_Clicked(object sender, System.EventArgs e)
         {
-            this.DisplayAlert("fab Clicked", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "finish");
+            this.DisplayAlert("fab Clicked", "test test test test test test test test test test test test test test test test test test ", "finish");
         }
     }
 }
