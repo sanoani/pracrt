@@ -37,20 +37,6 @@
     
     <!-- Your Pages -->
     
-    <!--
-    <TabBar>
-        <Tab Title="Home" Icon="home.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}"/>
-        </Tab>
-        <Tab Title="Library" Icon="library.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.AboutPage}"/>
-        </Tab>
-        <Tab Title="Contact" Icon="contact.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Views.ItemsPage}"/>
-        </Tab>
-    </TabBar>
-    -->
-    
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="Black"
@@ -89,6 +75,7 @@
             
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
+    
     
     <FlyoutItem Title="Profile" Icon="tab_feed.png">
         <Tab Title="Home" Icon="tab_feed.png">

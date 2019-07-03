@@ -80,9 +80,8 @@
                 <FontImageSource
                     FontFamily="{DynamicResource MaterialFontFamily}"
                     Glyph="{StaticResource plus}" />
-            </ImageButton.Source>                
+                </ImageButton.Source>                 
         </ImageButton>
-        
         
     </StackLayout>
     
